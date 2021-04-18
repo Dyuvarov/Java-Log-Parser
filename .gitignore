@@ -1,3 +1,4 @@
 .idea/
-LogParcer.iml
+*.iml
 out/
+success
