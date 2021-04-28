@@ -1,10 +1,19 @@
 # Java-Log-Parser
-Parsing text file in program data
+Parsing text file in program data.
 
-Class LogParser takes path to directory and parse files with .log extention in this directory. 
+##To test:
+Compile and pass the path to directory with .log files as first (and only) parametr.
 
+###Class LogParser.  
+Takes path to directory and parse files with .log extention in this directory using StreamAPI. 
+Also, using StreamAPI implemented functions:  
+:point_right: int getNumberOfUniqueIPs(Date after, Date before) - count of unique IPs betweend Date after, Date before  
+:point_right: Set<String> getUniqueIPs(Date after, Date before) - set of IPs betweend Date after, Date before  
+:point_right: Set<String> getIPsForEvent(Event event, Date after, Date before) - set of IPs, whith Event event betweend Date after, Date before    
+:point_right: Set<String> getIPsForStatus(Status status, Date after, Date before) - set of IPs, whith Status status betweend Date after, Date before  
+  
 Data stores in ArrayList of Log objects. 
   
-Log class contains fields to store one line from .log file.
+Log class contains fields to store one line from .log file.  
 
 After parsing creates file "success" and write there only lines with event == "DONE_TASK" and status = "OK".
