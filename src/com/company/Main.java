@@ -56,10 +56,10 @@ public class Main {
         {
             System.out.print("(null, null): ");
             int c = logParser.getNumberOfUniqueIPs(null, null);
-            if (c == logParser.get_data().size())
+            if (c == 5)
                 System.out.println("[SUCCESS]");
             else
-                System.out.println("[FAIL] expected " + logParser.get_data().size());
+                System.out.println("[FAIL] expected " + 6);
         }
         {
             System.out.print("(null, 30.08.2012 16:08:41): ");
@@ -72,7 +72,7 @@ public class Main {
         {
             System.out.print("(01.01.2014 03:45:23, null): ");
             int c = logParser.getNumberOfUniqueIPs(df.parse("01.01.2014 03:45:23"), null);
-            if (c == 8)
+            if (c == 5)
                 System.out.println("[SUCCESS]");
             else
                 System.out.println("[FAIL] expected " + 8);

@@ -70,12 +70,14 @@ public class LogParser implements IPQuery
 
     public int getNumberOfUniqueIPs(Date after, Date before)
     {
+        Set<String> res = new HashSet<String>();
         List<Log> tmpList = filterStreamByDate(_data.stream(), after, before);
         Stream<Log> stream = tmpList.stream();
-        return (int)stream.count();
+        stream.forEach(n -> res.add(n.getIp()));
+        return res.size();
     }
 
-    public Set<String> getUNiqueIPs(Date after, Date before)
+    public Set<String> getUniqueIPs(Date after, Date before)
     {
         Set<String> res = new HashSet<String>();
         List<Log> tmpList = filterStreamByDate(_data.stream(), after, before);

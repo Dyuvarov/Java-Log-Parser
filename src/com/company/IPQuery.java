@@ -7,7 +7,7 @@ public interface IPQuery
 {
     int getNumberOfUniqueIPs(Date after, Date before);
 
-    Set<String> getUNiqueIPs(Date after, Date before);
+    Set<String> getUniqueIPs(Date after, Date before);
 
     Set<String> getIPsForUSer(String user, Date after, Date before);
 
