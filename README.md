@@ -11,8 +11,8 @@ Takes path to directory and parse files with .log extention in this directory us
 Also, using StreamAPI implemented functions:  
 :point_right: int getNumberOfUniqueIPs(Date after, Date before) - count of unique IPs betweend Date after, Date before  
 :point_right: Set<String> getUniqueIPs(Date after, Date before) - set of IPs betweend Date after, Date before  
-:point_right: Set<String> getIPsForEvent(Event event, Date after, Date before) - set of IPs, whith Event event betweend Date after, Date before    
-:point_right: Set<String> getIPsForStatus(Status status, Date after, Date before) - set of IPs, whith Status status betweend Date after, Date before  
+:point_right: Set<String> getIPsForEvent(Event event, Date after, Date before) - unique of IPs, whith Event event betweend Date after, Date before    
+:point_right: Set<String> getIPsForStatus(Status status, Date after, Date before) - unique of IPs, whith Status status betweend Date after, Date before  
   
 Data stores in ArrayList of Log objects. 
   
